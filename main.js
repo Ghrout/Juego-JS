@@ -5,20 +5,18 @@ let btn_jugar = document.getElementById("accion__button");
 let result = document.getElementById("result");
 let loser = document.getElementById("loser");
 
-
 async function obtenerRespuestas() {
     let opciones = await fetch(apiUrl);
     let opcionesParseadas = await opciones.json();
-    let html = "";
-    opcionesParseadas.forEach((opciones_jugador1) => {
-        let opcion_jugador1 = `<option value="${opciones_jugador1}">
-            ${opciones_jugador1}
+    let xd = "";
+    opcionesParseadas.forEach((abandono) => {
+        let opcion_jugador1 = `<option value="${abandono}">
+            ${abandono}
         </option>`;
-
-        html += opcion_jugador1;
+        xd += opcion_jugador1;
     })
-    jugador1.innerHTML = html;
-    jugador2.innerHTML = html;
+    jugador1.innerHTML = xd;
+    jugador2.innerHTML = xd;
 }
 
 obtenerRespuestas();
