@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c6b6f3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.jugadores__content {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.jugadores__content {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.select {
+    width: 45%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.accion__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 25%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.accion__button:hover {
+    background-color: #0056b3;
+}
+
+.result__game {
+    display: flex; 
+    gap: 20px;
+    justify-content: center;
+}
+
+.result {
+    flex: 1; 
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #4793f67e;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
